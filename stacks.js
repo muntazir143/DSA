@@ -27,9 +27,18 @@ class Stack {
   }
 
   pop() {
+    if (!this.first) return null;
     var temp = this.first;
     this.first = this.first.next;
     this.size--;
     return temp.value;
   }
 }
+
+const stack = new Stack();
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.push(4);
+
+console.log(stack);
