@@ -87,10 +87,14 @@ class LinkedList {
     }
 
     let target = this.head;
-    for (let i  = 1; i <= index; i++) {
+    for (let i = 1; i <= index; i++) {
       target = target.next;
     }
     return target.value;
+  }
+
+  insert(index, value) {
+    const newNode = new Node(value);
   }
 
   printAll() {
